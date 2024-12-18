@@ -160,6 +160,13 @@
 			</column>
 			<options><![CDATA[ENGINE=InnoDB DEFAULT CHARSET=latin1]]></options>
 		</table>
+		<table name="tbl_prueba_2" prior="tbl_prueba" >
+			<column name="pk" type="INT" jt="4" mandatory="y" />
+			<index name="pk_tbl_prueba" unique="PRIMARY_KEY" >
+				<column name="pk" />
+			</index>
+			<options><![CDATA[engine=InnoDB]]></options>
+		</table>
 		<table name="tbl_temp" row_count="0" spec="" >
 			<comment><![CDATA[Tabla temporal]]></comment>
 			<column name="id" type="INT" jt="4" mandatory="y" >
@@ -238,6 +245,7 @@ FROM
 		<entity schema="poliplastic" name="scraps" color="BED3F4" x="368" y="48" />
 		<entity schema="poliplastic" name="sequelizemeta" color="BED3F4" x="944" y="384" />
 		<entity schema="poliplastic" name="siins" color="BED3F4" x="944" y="656" />
+		<entity schema="poliplastic" name="tbl_prueba_2" color="C1D8EE" x="1264" y="480" />
 		<entity schema="poliplastic" name="tbl_temp" color="BED3F4" x="944" y="208" />
 		<entity schema="poliplastic" name="users" color="BED3F4" x="656" y="896" />
 		<script name="SQL Editor" id="Editor-250f" language="SQL" >
